@@ -1,11 +1,19 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Router, { Route } from 'react-router';
 
+import App from './components/app';
 import Voting from './components/voting';
+import Results from './components/results';
 
 const pair = ['Trainspotting', 'Sunshine'];
 
+const routes = <Route component={App}>
+  <Route path="/" component={Voting} />
+  <Route path="/results" component={Results} />
+</Route>;
+
 ReactDOM.render(
-  <Voting pair={pair} winner='Trainspotting' />, document.getElementById('app')
+  <Router>{routes}</Router>, document.getElementById('app')
 );
