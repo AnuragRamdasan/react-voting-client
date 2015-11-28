@@ -5,8 +5,7 @@ import TestUtils from 'react-addons-test-utils';
 import { List, Map } from 'immutable';
 import { expect } from 'chai';
 
-import Results from '../../src/components/results.jsx';
-import Winner from '../../src/components/winner.jsx';
+import { Results } from '../../src/components/results.jsx';
 
 const { renderIntoDocument, scryRenderedDOMComponentsWithClass, Simulate } = TestUtils;
 

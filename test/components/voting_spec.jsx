@@ -1,5 +1,5 @@
 
-import Voting from '../../src/components/voting.jsx';
+import { Voting } from '../../src/components/voting.jsx';
 
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
